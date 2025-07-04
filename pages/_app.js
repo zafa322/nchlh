@@ -5,6 +5,7 @@ function MyApp({ Component, pageProps }) {
   // If the component has its own layout, use it
   if (Component.getLayout) {
     return Component.getLayout(<Component {...pageProps} />);
+    )
   }
 
   // For pages that don't specify their own layout, don't wrap them
